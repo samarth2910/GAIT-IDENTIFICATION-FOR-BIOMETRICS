@@ -5,6 +5,32 @@ The system is designed for **open-set recognition**, meaning it can also detect 
 
 ---
 
+## 📸 Screenshots
+
+### ❌ Unknown / Intruder Detection
+![Unknown Detection](assets/Screenshot%20(205).png)
+> System rejects an unrecognised subject — entropy too high (0.626 > 0.600), flagged as **Unknown / Intruder**
+
+---
+
+### 🏥 Poor Gait Health Score
+![Poor Health Score](assets/Screenshot%20(253).png)
+> System detects significant gait abnormalities and assigns a low Gait Health Score
+
+---
+
+### 📈 Temporal Gait Analysis
+![Temporal Analysis](assets/Screenshot%20(254).png)
+> Joint angle trajectories over time for all 7 biomechanical features across the walking video
+
+---
+
+### 🦿 Biomechanical Radar + Symmetry
+![Radar and Symmetry](assets/Screenshot%20(255).png)
+> Deviation-from-normal radar chart alongside the left–right gait symmetry index
+
+---
+
 ## 📌 Overview
 
 This project uses **pose-based gait features** extracted from video and feeds them into an **LSTM neural network** for classification.
@@ -194,6 +220,7 @@ Then:
 ├── videos1/                       # Training/test videos (not in Git)
 │   ├── train/
 │   └── test/
+├── assets/                        # Screenshots for README
 ├── ga.py                          # Model training & evaluation script
 ├── st_enhanced.py                 # Streamlit web app
 ├── requirements.txt               # Python dependencies
